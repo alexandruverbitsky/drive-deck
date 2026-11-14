@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "symbols": [
+    {
+      "symbol": "FX:USDCAD",
+      "name": "USD / CAD"
+    },
+    {
+      "symbol": "FOREXCOM:SPXUSD",
+      "name": "US 500 · CFD"
+    },
+    {
+      "symbol": "FOREXCOM:NSXUSD",
+      "name": "US 100 · CFD"
+    },
+    {
+      "symbol": "BITSTAMP:BTCUSD",
+      "name": "Bitcoin · USD"
+    }
+  ]
+}

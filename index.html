@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="dashboard-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#121817" />
+    <title>Drive Deck Lite — Your apps. Your drive.</title>
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link rel="stylesheet" href="./lite.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body class="dashboard-page">
+    <div class="shell">
+      <aside class="rail">
+        <a class="brand" href="./" aria-label="Drive Deck home"
+          ><svg viewBox="0 0 32 32" fill="none">
+            <path
+              d="M7 24V8h8c9 0 13 16 0 16H7Z"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+            <path d="m12 16 5-4v8l-5-4Z" fill="currentColor" /></svg
+        ></a>
+        <div class="railnav">
+          <button
+            class="railbutton selected"
+            data-tab="all"
+            title="All shortcuts"
+            aria-label="All shortcuts"
+            id="gridNav"
+          ></button
+          ><button
+            class="railbutton"
+            data-tab="favorites"
+            title="Favorites"
+            aria-label="Favorites"
+            id="starNav"
+          ></button
+          ><button
+            class="railbutton"
+            data-tab="radio"
+            title="Radio"
+            aria-label="Radio"
+            id="radioNav"
+          ></button>
+        </div>
+        <div class="railbottom">
+          <button
+            id="fullscreen"
+            class="railbutton"
+            title="Expand radio"
+            aria-label="Expand radio"
+          ></button
+          ><button
+            id="settings"
+            class="railbutton"
+            title="Appearance and settings"
+            aria-label="Appearance and settings"
+          ></button
+          ><span class="rail-caption">DD</span>
+        </div>
+      </aside>
+      <main>
+        <header>
+          <div class="wordmark">
+            drive<span>deck</span><span class="beta">PERSONAL DASHBOARD</span>
+          </div>
+          <div class="topright">
+            <span class="lite-badge">LITE</span><span id="clock">--:--</span>
+          </div>
+        </header>
+        <section class="intro">
+          <div>
+            <div class="eyebrow" id="date">YOUR SPACE, ON THE ROAD</div>
+            <h1>Your apps. <span>Your drive.</span></h1>
+            <p>A little more connected. A lot more you.</p>
+          </div>
+        </section>
+        <section class="dashboard">
+          <div class="workspace">
+            <div class="shortcuts-area">
+              <div
+                id="shortcutGrid"
+                class="shortcut-grid"
+                tabindex="0"
+                role="region"
+                aria-label="App pages. Swipe left or right, or choose a page dot."
+              ></div>
+              <nav class="pager" aria-label="App pages">
+                <button
+                  hidden
+                  id="previousPage"
+                  class="pager-arrow"
+                  aria-label="Previous app page"
+                >
+                  ‹
+                </button>
+                <div id="pageControls" class="page-controls"></div>
+                <span
+                  class="visually-hidden"
+                  id="pageStatus"
+                  role="status"
+                  aria-live="polite"
+                ></span>
+                <button
+                  hidden
+                  id="nextPage"
+                  class="pager-arrow"
+                  aria-label="Next app page"
+                >
+                  ›
+                </button>
+              </nav>
+              <div class="grid-note">
+                <span id="gridHint">Your favorites, always within reach.</span
+                ><span id="layoutCount"></span>
+              </div>
+            </div>
+            <aside class="side-panel">
+              <div class="section-label">IN THE MOMENT <span>↗</span></div>
+              <div class="now-card">
+                <div class="album-art" id="albumArt">
+                  <div class="record"><div></div></div>
+                  <span class="station-art-label"
+                    >DRIVE<br />DECK<span>RADIO</span></span
+                  >
+                </div>
+                <div class="track-info">
+                  <span class="live-label" id="liveLabel"
+                    ><i></i> READY TO PLAY</span
+                  >
+                  <h2 id="trackName">Choose your soundtrack.</h2>
+                  <p id="trackMeta">Choose a radio station to tune in.</p>
+                </div>
+                <div class="player-controls">
+                  <button
+                    id="mute"
+                    aria-label="Mute"
+                    class="icon-button"
+                  ></button>
+                  <div class="equalizer" id="equalizer">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                    ><i></i><i></i><i></i><i></i>
+                  </div>
+                  <button
+                    id="play"
+                    class="play-button"
+                    aria-label="Play radio"
+                  ></button>
+                </div>
+                <input
+                  id="volume"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step=".05"
+                  value=".7"
+                  aria-label="Volume"
+                />
+                <button id="retryRadio" class="text-button" hidden>
+                  Retry connection
+                </button>
+              </div>
+            </aside>
+          </div>
+        </section>
+        <section class="market-strip" aria-label="Market watch">
+          <div class="market-heading">
+            <button
+              id="marketSettings"
+              class="market-title"
+              aria-label="Market information"
+            >
+              Market watch</button
+            ><small>Prices may be delayed · Index proxies are CFDs</small
+            ><button
+              id="toggleMarkets"
+              class="text-button"
+              aria-pressed="false"
+            >
+              Pause
+            </button>
+          </div>
+          <div
+            id="marketFrame"
+            class="market-quotes"
+            tabindex="0"
+            aria-label="Market charts. Swipe horizontally for more markets."
+          ></div>
+          <a
+            class="market-credit"
+            href="https://www.tradingview.com/markets/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Market charts by TradingView ↗</a
+          >
+          <p id="marketsPaused" hidden>
+            Market feed paused. Select Resume to load fresh quotes.
+          </p>
+        </section>
+        <footer>
+          <span><i class="status-dot"></i> A space that feels like you.</span
+          ><span id="footerStatus">Stations and favorites from JSON</span
+          ><a class="footer-privacy" href="./privacy.html">Privacy</a>
+          <button id="help">About Drive Deck Lite</button>
+        </footer>
+      </main>
+    </div>
+    <audio id="audio" preload="none"></audio>
+    <div id="toast" role="status"></div>
+    <dialog id="modal">
+      <button id="closeModal" class="close-modal" aria-label="Close dialog">
+        ×
+      </button>
+      <div id="modalBody"></div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "stations": [
+    {
+      "id": "waze",
+      "name": "Waze",
+      "icon": "navigation",
+      "color": "#51c9ed",
+      "type": "map",
+      "url": "https://www.waze.com/live-map/"
+    },
+    {
+      "id": "groove",
+      "name": "Groove Salad",
+      "icon": "leaf",
+      "color": "#9ac79b",
+      "type": "radio",
+      "url": "https://ice2.somafm.com/groovesalad-128-mp3"
+    },
+    {
+      "id": "nts",
+      "name": "NTS Radio",
+      "icon": "nts",
+      "color": "#eeeeea",
+      "type": "web",
+      "url": "https://www.nts.live/"
+    },
+    {
+      "id": "drone",
+      "name": "Drone Zone",
+      "icon": "orbit",
+      "color": "#aa9ae1",
+      "type": "radio",
+      "url": "https://ice2.somafm.com/dronezone-128-mp3"
+    },
+    {
+      "id": "radio",
+      "name": "Radio Garden",
+      "icon": "globe",
+      "color": "#b9d86d",
+      "type": "web",
+      "url": "https://radio.garden/"
+    },
+    {
+      "id": "bandcamp",
+      "name": "Bandcamp",
+      "icon": "bandcamp",
+      "color": "#62b8c5",
+      "type": "web",
+      "url": "https://bandcamp.com/"
+    },
+    {
+      "id": "bbc-world",
+      "name": "BBC World Service",
+      "type": "radio",
+      "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+      "icon": "radio",
+      "color": "#e6e8ef",
+      "country": "UK",
+      "genre": "News",
+      "homepage": "https://www.bbc.co.uk/worldserviceradio",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "lbc-news",
+      "name": "LBC News",
+      "type": "radio",
+      "url": "https://media-ssl.musicradio.com/LBCNewsUK",
+      "icon": "radio",
+      "color": "#65b9e8",
+      "country": "UK",
+      "genre": "News",
+      "homepage": "https://www.lbc.co.uk/",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "heart",
+      "name": "Heart UK",
+      "type": "radio",
+      "url": "https://media-ssl.musicradio.com/HeartUK",
+      "icon": "music",
+      "color": "#ed5c79",
+      "country": "UK",
+      "genre": "Pop",
+      "homepage": "https://www.heart.co.uk/",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "kommersant",
+      "name": "Kommersant FM",
+      "type": "radio",
+      "url": "https://kommersant77.hostingradio.ru:8085/kommersant64.mp3",
+      "icon": "radio",
+      "color": "#c5c7dd",
+      "country": "Russia",
+      "genre": "News",
+      "homepage": "https://www.kommersant.ru/fm",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "europa-plus",
+      "name": "Europa Plus",
+      "type": "radio",
+      "url": "https://europaplus.hostingradio.ru:8014/europaplus320.mp3",
+      "icon": "music",
+      "color": "#78afe5",
+      "country": "Russia",
+      "genre": "Pop",
+      "homepage": "https://europaplus.ru/",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "retro-80",
+      "name": "Retro FM 80s",
+      "type": "radio",
+      "url": "https://retro80.hostingradio.ru:8025/retro80-128.mp3",
+      "icon": "music",
+      "color": "#eda56d",
+      "country": "Russia",
+      "genre": "Hits",
+      "homepage": "https://retrofm.ru/",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "france-inter",
+      "name": "France Inter",
+      "type": "radio",
+      "url": "https://icecast.radiofrance.fr/franceinter-midfi.mp3?id=openapi",
+      "icon": "radio",
+      "color": "#ec716b",
+      "country": "France",
+      "genre": "News / Talk",
+      "homepage": "https://www.radiofrance.fr/franceinter",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "franceinfo",
+      "name": "franceinfo",
+      "type": "radio",
+      "url": "https://icecast.radiofrance.fr/franceinfo-midfi.mp3?id=openapi",
+      "icon": "radio",
+      "color": "#f3d46c",
+      "country": "France",
+      "genre": "News",
+      "homepage": "https://www.radiofrance.fr/franceinfo",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "fip",
+      "name": "FIP",
+      "type": "radio",
+      "url": "https://icecast.radiofrance.fr/fip-midfi.mp3?id=openapi",
+      "icon": "fip",
+      "color": "#ed5ca4",
+      "country": "France",
+      "genre": "Eclectic",
+      "homepage": "https://www.radiofrance.fr/fip",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "cbc-toronto",
+      "name": "CBC Radio One Toronto",
+      "type": "radio",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBLAFM_CBC.mp3",
+      "icon": "radio",
+      "color": "#ec7678",
+      "country": "Canada",
+      "genre": "News / Talk",
+      "homepage": "https://www.cbc.ca/listen/live-radio",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "ici-premiere",
+      "name": "ICI Première Montréal",
+      "type": "radio",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBFFM_SRC.mp3",
+      "icon": "radio",
+      "color": "#8c9fea",
+      "country": "Canada",
+      "genre": "News / Talk",
+      "homepage": "https://ici.radio-canada.ca/ohdio/premiere",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "ici-musique",
+      "name": "ICI Musique Montréal",
+      "type": "radio",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBFXFM_SRC.mp3",
+      "icon": "music",
+      "color": "#c092df",
+      "country": "Canada",
+      "genre": "Music",
+      "homepage": "https://ici.radio-canada.ca/ohdio/musique",
+      "streamChecked": "2026-11-14"
+    },
+    {
+      "id": "jazz-fm91",
+      "name": "JAZZ.FM91 Toronto",
+      "type": "radio",
+      "url": "https://jazzfm91.streamb.live/SB00009",
+      "icon": "music",
+      "color": "#dfbb79",
+      "country": "Canada",
+      "genre": "Jazz",
+      "homepage": "https://jazz.fm/streaming/",
+      "streamChecked": "2026-11-14"
+    }
+  ],
+  "favorites": [
+    "waze",
+    "groove",
+    "fip",
+    "nts",
+    "bbc-world",
+    "kommersant",
+    "france-inter",
+    "cbc-toronto"
+  ]
+}

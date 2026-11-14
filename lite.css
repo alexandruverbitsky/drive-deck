@@ -1,0 +1,10 @@
+.dashboard-page [hidden]{display:none!important}
+.lite-badge{font-size:10px;letter-spacing:.15em;opacity:.6}
+.dashboard-page .workspace{padding-top:18px}
+.dashboard-page .side-panel{grid-template-rows:auto}
+.lite-switch{display:flex;align-items:center;gap:12px;margin:24px 0}
+.lite-switch input{width:20px;height:20px;margin:0}
+.lite-error{padding:20px;max-width:400px}
+.market-title{color:inherit;background:none;border:0;letter-spacing:inherit;text-transform:uppercase;font:inherit;cursor:pointer}
+@media(max-width:640px){.dashboard-page .side-panel{display:block}.dashboard-page .now-card{width:100%}}
+@media(max-height:450px){.dashboard-page .workspace{padding-top:4px}}
